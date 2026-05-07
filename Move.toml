@@ -1,0 +1,20 @@
+# Weighted multisig governance config for smart accounts
+# Role-based permissions (Propose/Vote/Execute), weighted members, threshold-based approval
+
+[package]
+published-at = "0x8cc6258e6eb3fa2449316065b4142a557bf6436d0e9c2ec7bc0b1bf46f78a6b1"
+name = "AccountMultisig"
+edition = "2024"
+license = "BUSL-1.1"
+
+[dependencies]
+AccountProtocol = { local = "../smart_account/protocol" }
+futarchy_core = { local = "../futarchy/futarchy_core" }
+
+[addresses]
+account_multisig = "0x8cc6258e6eb3fa2449316065b4142a557bf6436d0e9c2ec7bc0b1bf46f78a6b1"
+
+[environments]
+mainnet = "35834a8a"
+testnet = "4c78adac"
+localnet = "4afd09da"
